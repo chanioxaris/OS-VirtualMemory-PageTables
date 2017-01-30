@@ -32,7 +32,7 @@ int memory (int k, int f, int q, int max)
 		}
 
 	/* Open first trace files */	
-	FILE* process1 = fopen("testbzip.trace", "r"); 
+	FILE* process1 = fopen("bzip.trace", "r"); 
 	
 	if (process1 == NULL)
 		{
@@ -41,7 +41,7 @@ int memory (int k, int f, int q, int max)
 		}
 	
 	/* Open second trace files */	
-	FILE* process2 = fopen("testgcc.trace", "r"); 
+	FILE* process2 = fopen("gcc.trace", "r"); 
 	
 	if (process2 == NULL)
 		{
