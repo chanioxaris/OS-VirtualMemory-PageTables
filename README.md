@@ -1,4 +1,4 @@
-# OS-VirtualMemory-PageTables
+# OS-VirtualMemory-PageTables [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A simple simulator for Virtual Memory and Inverted Page Table. 
 Reads 2 files(bzip.trace and gcc.trace) which include traces from 2 program and runs the simulator using Round Robin.
