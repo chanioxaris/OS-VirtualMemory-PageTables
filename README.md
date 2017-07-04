@@ -42,9 +42,8 @@ The below table includes the results of the simulation for different numbers of 
 | k = 50  |     496     |     100    |  496  |   318  |  2000  |  
 | k = 100 |     439     |     200    |  439  |   280  |  2000  |  
 | k = 250 |     399     |     500    |  399  |   255  |  2000  |  
-<br />
 
-It's pretty clear from the above that the more page table are available, the less page faults occur.
+
 
 ## Compile
 
