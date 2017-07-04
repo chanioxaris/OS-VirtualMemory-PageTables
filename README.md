@@ -6,7 +6,6 @@ In computer operating systems, virtual memory is a management technique to handl
 
 ![Inverted page table](https://github.com/chanioxaris/VirtualMemory-PageTables/blob/master/img/IPT.png)
 
-<br />
 This program simulates the function of an operation system that uses paging for virtual memory management, alongside with Inverted page table and Flush When Full (FWF) as a page replacement algorithm. Round-robin algorithm is used for scheduling between the reference traces of two processes.
 
 ### Inverted page table (IPT)
