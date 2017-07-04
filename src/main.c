@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 
-void memory(int, int, int, int);
+int memory(int, int, int, int);
 
 int main(int argc, char* argv[])
 	{
