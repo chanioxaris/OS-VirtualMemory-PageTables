@@ -10,14 +10,14 @@ This program simulates the function of an operation system that uses paging for 
 
 ### Inverted page table (IPT)
 
-Inverted page table is a advanced type of page table. In contrast with classical page table (where each process has it's own), inverted page table is a global page table maintained by the operating system for all the processes. There is just one page table in the entire system, implying that additional information needs to be stored in the page table to identify page table entries corresponding to each process. 
+Inverted page table is a advanced type of page table. In contrast with classical (where each process has it's own), inverted page table is global and maintained by the operating system for all the processes. There is just one page table in the entire system, implying that additional information needs to be stored in the page table to identify page table entries corresponding to each process. 
 <br />
 The page table stores the frame number into an array indexed by page number: given the page number, the frame number is achieved by a simple indexed load. An inverted page table stores the page number in an array indexed by frame number. Given the page number, you search for the entry with that page number: the entry number specifies the frame.
 
 
 ### Flush When Full (FTW)
 
-Flush When Full algorithm allows up to k page faults to occur for a single process. When the k+1 page fault appears, all pages from the specific process, in page table, are evicted (flush)
+Flush When Full algorithm allows up to k page faults to occur for a single process. When the k+1 page fault appears, all pages from the specific process in page table are evicted (flush).
 
 
 ### Round-robin algorithm (RR)
