@@ -6,19 +6,24 @@ In computer operating systems, virtual memory is a management technique to handl
 <br />
 This program simulates the function of an operation system that uses paging for virtual memory management, alongside with Inverted age table and Flush When Full (FWF) as a page replacement algorithm. Round-robin algorithm is used for scheduling between the reference traces of two processes.
 
-### Inverted page table
+### Inverted page table (IPT)
 
-Inverted page table is a 
+Inverted page table is a different type of classic page table. In contrast with classic page table (where each process has it's own), inverted page table is a global page table maintained by the operating system for all the processes. There is just one page table in the entire system, implying that additional information needs to be stored in the page table to identify page table entries corresponding to each process. 
+<br />
+The page table stores the frame number into an array indexed by page number: given the page number, the frame number is achieved by a simple indexed load. An inverted page table stores the page number in an array indexed by frame number. Given the page number, you search for the entry with that page number: the entry number specifies the frame.
 
-### Flush When Full
+
+
+
+### Flush When Full (FTW)
 
 When the fast memory is full, a request for a page not in fast memory causes the cache to be cleared.
 All pages from the same process are evicted (flush), when the k+1 distinct page request arrives.
 
 
 
-### Round-robin algorithm
-
+### Round-robin algorithm (R-R)
+Round-robin (RR) is one of the algorithms employed by process schedulers. To schedule processes fairly, a round-robin scheduler generally employs time-sharing, giving each job a time slot or quantum (its allowance of CPU time), and interrupting the job if it is not completed by then. The job is resumed next time a time slot is assigned to that process. The scheduler selects the first process in the ready queue to execute, thus handling all processes without priority.
 
 
 ## Statistics
