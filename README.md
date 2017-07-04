@@ -36,7 +36,7 @@ After the simulation is over, some statistics are printed which are:
 The below table includes the results of the simulation for different numbers of input argument k (FWF parameter)
 
 |         | Page Faults | PT Frames  | Reads | Writes | Traces | 
-| :----:  | :---------: | :--------: | :---: | :----: | :----: |
+| :------ | :---------: | :--------: | :---: | :----: | :----: |
 | k = 10  |     817     |     20     |  817  |   506  |  2000  |
 | k = 25  |     582     |     50     |  582  |   361  |  2000  |  
 | k = 50  |     496     |     100    |  496  |   318  |  2000  |  
