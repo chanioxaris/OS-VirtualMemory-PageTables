@@ -27,7 +27,24 @@ Round-robin (RR) is one of the algorithms employed by process schedulers. To sch
 
 ## Statistics
 
-After the simulation is over, some statistics are printed which are: 1) Number of Page Faults occured 2) Number of writes back on disk for the dirty traces 3) Number of reads from disk 4) Number of total traces 
+After the simulation is over, some statistics are printed which are: 
+- Number of Page Faults occured 
+- Number of writes back on disk for the dirty traces 
+- Number of reads from disk
+- Number of total traces 
+
+The below table includes the results of the simulation for different numbers of input argument k (FWF parameter)
+
+|         | Page Faults | PT Frames  | Reads | Writes | Traces | 
+| :----:  | :---------: | :--------: | :---: | :----: | :----: |
+| k = 10  |     817     |     20     |  817  |   506  |  2000  |
+| k = 25  |     582     |     50     |  582  |   361  |  2000  |  
+| k = 50  |     496     |     100    |  496  |   318  |  2000  |  
+| k = 100 |     439     |     200    |  439  |   280  |  2000  |  
+| k = 250 |     399     |     500    |  399  |   255  |  2000  |  
+<br />
+
+It's pretty clear from the above that the more page table are available, the less page faults occur.
 
 ## Compile
 
