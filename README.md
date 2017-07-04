@@ -13,13 +13,9 @@ Inverted page table is a different type of classic page table. In contrast with 
 The page table stores the frame number into an array indexed by page number: given the page number, the frame number is achieved by a simple indexed load. An inverted page table stores the page number in an array indexed by frame number. Given the page number, you search for the entry with that page number: the entry number specifies the frame.
 
 
-
-
 ### Flush When Full (FTW)
 
-When the fast memory is full, a request for a page not in fast memory causes the cache to be cleared.
-All pages from the same process are evicted (flush), when the k+1 distinct page request arrives.
-
+Flush When Full algorithm allows up to k page faults to occur for a single process. When the k+1 page fault appears, all pages from the specific process, in page table, are evicted (flush)
 
 
 ### Round-robin algorithm (R-R)
