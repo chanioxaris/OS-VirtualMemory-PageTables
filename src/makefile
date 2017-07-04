@@ -1,6 +1,6 @@
 CC = gcc
 
-PROG = askisi2
+PROG = simulation
 SRCS = main.c memory.c
 
 OBJS = $(SRCS:.c=.o)
