@@ -20,7 +20,7 @@ The page table stores the frame number into an array indexed by page number: giv
 Flush When Full algorithm allows up to k page faults to occur for a single process. When the k+1 page fault appears, all pages from the specific process, in page table, are evicted (flush)
 
 
-### Round-robin algorithm (R-R)
+### Round-robin algorithm (RR)
 Round-robin (RR) is one of the algorithms employed by process schedulers. To schedule processes fairly, a round-robin scheduler generally employs time-sharing, giving each job a time slot or quantum (its allowance of CPU time), and interrupting the job if it is not completed by then. The job is resumed next time a time slot is assigned to that process. The scheduler selects the first process in the ready queue to execute, thus handling all processes without priority.
 
 
@@ -43,7 +43,6 @@ The below table includes the results of the simulation for different numbers of 
 | k = 250 |     399     |     500    |  399  |   255  |  2000  |  
 
 
-
 ## Compile
 
 `./makefile`
@@ -51,4 +50,3 @@ The below table includes the results of the simulation for different numbers of 
 ## Usage
 
 `./simulation -k [parameter of FWF algorithm] -q [round-robin quantum] -m [number of traces to examine]`
-
