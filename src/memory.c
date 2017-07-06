@@ -3,7 +3,6 @@
 #include <string.h>
 
 
-
 int memory (int k, int f, int q, int max)
 	{
 	int i, j, p_number, pid, on_memory, PF_k1 = 0, PF_k2 = 0, PF = 0, disk_write = 0, disk_read = 0, trace_entries = 0;
@@ -51,8 +50,7 @@ int memory (int k, int f, int q, int max)
 	
 	/* Loop while trace_entries match max */
 	while(1)
-		{
-			
+		{			
 		/* Examine traces of q-size block from first process */
 		for (i = 0 ; i < q ; i++)
 			{
@@ -86,11 +84,11 @@ int memory (int k, int f, int q, int max)
 					}	
 				}
 			
-			/* Trace not on IPT, so we face page fault */
+			/* Trace not on IPT, page fault occurs*/
 			if (on_memory == 0)
 				{
 				PF_k1++;			// block page fault counter
-				PF++;			// statistic total page fault counter
+				PF++;				// statistic total page fault counter
 				disk_read++;
 
 				if (PF_k1 > k)
@@ -161,7 +159,6 @@ int memory (int k, int f, int q, int max)
 				
 				return 0;
 				}
-				
 			} 	
 		
 		
@@ -198,11 +195,11 @@ int memory (int k, int f, int q, int max)
 					}	
 				}
 			
-			/* Trace not on IPT, so we face page fault */
+			/* Trace not on IPT, page fault occurs */
 			if (on_memory == 0)
 				{
 				PF_k2++;			// block page fault counter
-				PF++;			// statistic total page fault counter
+				PF++;				// statistic total page fault counter
 				disk_read++;
 
 				if (PF_k2 > k)
