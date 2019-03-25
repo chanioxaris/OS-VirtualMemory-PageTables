@@ -4,7 +4,7 @@
 In computer operating systems, virtual memory is a management technique to handle the computer's primary memory. A page, memory page or virtual page is a fixed-length contiguous block of virtual memory and in similar a page frame is the smallest fixed-length contiguous block of physical memory. Virtual memory maps the virtual addresses (organized in pages) used by a program into physical addresses (organized in page frames) in computer memory, using a page table, which is a data structure to store this mapping.
 
 
-![Inverted page table](https://github.com/chanioxaris/VirtualMemory-PageTables/blob/master/img/IPT.png)
+![Inverted page table](https://github.com/chanioxaris/virtual-memory/blob/master/img/IPT.png)
 
 This program simulates the function of an operation system that uses paging for virtual memory management, alongside with Inverted page table and Flush When Full (FWF) as a page replacement algorithm. Round-robin algorithm is used for scheduling between the reference traces of two processes.
 
